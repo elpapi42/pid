@@ -1,0 +1,26 @@
+{
+  "name": "@elpapi42/pid-cli",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Human-first CLI for PID with optional JSON output",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "bin": {
+    "pid": "./dist/main.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@elpapi42/pid-sdk": "0.1.0",
+    "@inquirer/prompts": "7.10.1",
+    "commander": "15.1.0"
+  }
+}

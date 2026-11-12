@@ -1,0 +1,19 @@
+{
+  "name": "pid-workspace",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/sdk",
+    "packages/cli"
+  ],
+  "scripts": {
+    "build": "npm run build -w @elpapi42/pid-sdk && npm run build -w @elpapi42/pid-cli",
+    "test": "npm run build && node --test packages/sdk/test/*.test.mjs packages/cli/test/*.test.mjs test/integration/*.test.mjs",
+    "check": "npm run build",
+    "test:packages": "npm run build && node test/package-smoke.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "typescript": "^6.0.0"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.tgz
+coverage/
+/.pid/data.mdb
+/.pid/lock.mdb
+/.pid/harnesses/
+/.pid/auth/

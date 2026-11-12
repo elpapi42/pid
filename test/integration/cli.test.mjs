@@ -130,7 +130,7 @@ test(
           human.stdout.includes("Answer") &&
           machine.stdout.trim().split("\n").length === 3,
       );
-      assert.match(human.stdout, /You\nHello/);
+      assert.match(human.stdout, /User\nHello/);
       assert.match(human.stdout, /Thinking\nchecking/);
       assert.match(human.stdout, /Assistant\nAnswer/);
       assert.match(human.stderr, /New activity only/);

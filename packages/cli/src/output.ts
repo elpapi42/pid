@@ -116,7 +116,7 @@ export function activity(item: Activity): string {
     case "thinking":
       return `${prefix} Thinking\n${plain(item.text)}`;
     case "user_message":
-      return `${prefix} You\n${plain(item.text)}`;
+      return `${prefix} User\n${plain(item.text)}`;
     case "assistant_message":
       return `${prefix} Assistant\n${plain(item.text)}`;
     case "tool_call":
